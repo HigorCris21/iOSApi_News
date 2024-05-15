@@ -16,6 +16,9 @@
 		EB6AE09D2BF52AF7002D72E0 /* iOSApiNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6AE09C2BF52AF7002D72E0 /* iOSApiNewsTests.swift */; };
 		EB6AE0A72BF52AF7002D72E0 /* iOSApiNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6AE0A62BF52AF7002D72E0 /* iOSApiNewsUITests.swift */; };
 		EB6AE0A92BF52AF7002D72E0 /* iOSApiNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6AE0A82BF52AF7002D72E0 /* iOSApiNewsUITestsLaunchTests.swift */; };
+		EBB936A32BF54FD000AF2A48 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB936A22BF54FD000AF2A48 /* Article.swift */; };
+		EBB936A82BF5571B00AF2A48 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB936A72BF5571B00AF2A48 /* NetworkManager.swift */; };
+		EBB936AC2BF557C400AF2A48 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB936AB2BF557C400AF2A48 /* RequestError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		EB6AE0A22BF52AF7002D72E0 /* iOSApiNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSApiNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6AE0A62BF52AF7002D72E0 /* iOSApiNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApiNewsUITests.swift; sourceTree = "<group>"; };
 		EB6AE0A82BF52AF7002D72E0 /* iOSApiNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApiNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBB936A22BF54FD000AF2A48 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		EBB936A72BF5571B00AF2A48 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EBB936AB2BF557C400AF2A48 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +85,12 @@
 		EB6AE0792BF52AF5002D72E0 = {
 			isa = PBXGroup;
 			children = (
-				EB6AE08E2BF52AF7002D72E0 /* Assets.xcassets */,
-				EB6AE0842BF52AF5002D72E0 /* iOSApiNews */,
+				EBB936A62BF556F000AF2A48 /* Services */,
 				EBB9369F2BF5495300AF2A48 /* Model */,
 				EBB936A02BF5495B00AF2A48 /* View */,
 				EBB936A12BF5496300AF2A48 /* Controler */,
+				EB6AE0842BF52AF5002D72E0 /* iOSApiNews */,
+				EBB936A42BF550D000AF2A48 /* Resources */,
 				EB6AE09B2BF52AF7002D72E0 /* iOSApiNewsTests */,
 				EB6AE0A52BF52AF7002D72E0 /* iOSApiNewsUITests */,
 				EB6AE0832BF52AF5002D72E0 /* Products */,
@@ -131,6 +138,7 @@
 		EBB9369F2BF5495300AF2A48 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EBB936A22BF54FD000AF2A48 /* Article.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,6 +157,23 @@
 			children = (
 			);
 			path = Controler;
+			sourceTree = "<group>";
+		};
+		EBB936A42BF550D000AF2A48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB6AE08E2BF52AF7002D72E0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EBB936A62BF556F000AF2A48 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EBB936A72BF5571B00AF2A48 /* NetworkManager.swift */,
+				EBB936AB2BF557C400AF2A48 /* RequestError.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB936AC2BF557C400AF2A48 /* RequestError.swift in Sources */,
+				EBB936A32BF54FD000AF2A48 /* Article.swift in Sources */,
 				EB6AE08A2BF52AF5002D72E0 /* ViewController.swift in Sources */,
+				EBB936A82BF5571B00AF2A48 /* NetworkManager.swift in Sources */,
 				EB6AE0862BF52AF5002D72E0 /* AppDelegate.swift in Sources */,
 				EB6AE0882BF52AF5002D72E0 /* SceneDelegate.swift in Sources */,
 			);
