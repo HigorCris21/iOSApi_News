@@ -79,7 +79,11 @@
 		EB6AE0792BF52AF5002D72E0 = {
 			isa = PBXGroup;
 			children = (
+				EB6AE08E2BF52AF7002D72E0 /* Assets.xcassets */,
 				EB6AE0842BF52AF5002D72E0 /* iOSApiNews */,
+				EBB9369F2BF5495300AF2A48 /* Model */,
+				EBB936A02BF5495B00AF2A48 /* View */,
+				EBB936A12BF5496300AF2A48 /* Controler */,
 				EB6AE09B2BF52AF7002D72E0 /* iOSApiNewsTests */,
 				EB6AE0A52BF52AF7002D72E0 /* iOSApiNewsUITests */,
 				EB6AE0832BF52AF5002D72E0 /* Products */,
@@ -101,9 +105,6 @@
 			children = (
 				EB6AE0852BF52AF5002D72E0 /* AppDelegate.swift */,
 				EB6AE0872BF52AF5002D72E0 /* SceneDelegate.swift */,
-				EB6AE0892BF52AF5002D72E0 /* ViewController.swift */,
-				EB6AE08B2BF52AF5002D72E0 /* Main.storyboard */,
-				EB6AE08E2BF52AF7002D72E0 /* Assets.xcassets */,
 				EB6AE0902BF52AF7002D72E0 /* LaunchScreen.storyboard */,
 				EB6AE0932BF52AF7002D72E0 /* Info.plist */,
 			);
@@ -125,6 +126,29 @@
 				EB6AE0A82BF52AF7002D72E0 /* iOSApiNewsUITestsLaunchTests.swift */,
 			);
 			path = iOSApiNewsUITests;
+			sourceTree = "<group>";
+		};
+		EBB9369F2BF5495300AF2A48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBB936A02BF5495B00AF2A48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB6AE08B2BF52AF5002D72E0 /* Main.storyboard */,
+				EB6AE0892BF52AF5002D72E0 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBB936A12BF5496300AF2A48 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
