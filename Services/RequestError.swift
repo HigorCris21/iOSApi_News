@@ -4,12 +4,13 @@
 //
 //  Created by Higor  Lo Castro on 15/05/24.
 //
-
-// RequestError.swift
-
 import Foundation
 
-enum RequestError: Error {
+protocol ErrorDescribable {
+    var errorMessage: String { get }
+}
+
+enum RequestError: Error, ErrorDescribable {
     case invalidURL
     case wordNotFound
     case decodingError
@@ -28,3 +29,4 @@ enum RequestError: Error {
         }
     }
 }
+
